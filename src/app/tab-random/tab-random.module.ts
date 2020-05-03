@@ -8,6 +8,8 @@ import { TabRandomPageRoutingModule } from './tab-random-routing.module';
 
 import { TabRandomPage } from './tab-random.page';
 
+import { SQLite } from '@ionic-native/sqlite/ngx';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,9 @@ import { TabRandomPage } from './tab-random.page';
     IonicModule,
     TabRandomPageRoutingModule
   ],
-  declarations: [TabRandomPage]
+  declarations: [TabRandomPage],
+  providers: [
+    SQLite,
+  ]
 })
 export class TabRandomPageModule {}

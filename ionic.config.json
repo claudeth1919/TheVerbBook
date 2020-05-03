@@ -1,5 +1,7 @@
 {
   "name": "TheVerbBook",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
